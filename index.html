@@ -408,7 +408,7 @@ My research intersets include:</p>
   </ul>
 </div>
 
-<div class="page__footer-copyright">&copy; 2019 Athanasios Polydoros, Ph.D. Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://github.com/academicpages/academicpages.github.io">AcademicPages</a>, a fork of <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
+<div class="page__footer-copyright">&copy; 2020 Athanasios Polydoros, Ph.D. Powered by <a href="http://jekyllrb.com" rel="nofollow">Jekyll</a> &amp; <a href="https://github.com/academicpages/academicpages.github.io">AcademicPages</a>, a fork of <a href="https://mademistakes.com/work/minimal-mistakes-jekyll-theme/" rel="nofollow">Minimal Mistakes</a>.</div>
 
       </footer>
     </div>
@@ -425,8 +425,17 @@ My research intersets include:</p>
   })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
   ga('create', 'UA-116314635-1', 'auto');
+  ga('require', 'ipMeta', {
+      serviceProvider: 'dimension1',
+      networkDomain: 'dimension2',
+      networkType: 'dimension3',
+  });
+  ga('ipMeta:loadNetworkFields');
   ga('send', 'pageview');
 </script>
+
+<!-- IpMeta must be included after Google Analytics -->
+<script async src="https://ipmeta.io/plugin.js"></script>
 
 
 
